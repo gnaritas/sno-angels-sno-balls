@@ -34,6 +34,7 @@ section.hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr)
 background:linear-gradient(180deg,#fff 0%,var(--snow) 100%);border:1px solid var(--mist);border-radius:26px;
 padding:2.6rem 2.4rem;margin:1rem 0 2.4rem;box-shadow:0 24px 60px rgba(59,34,48,.10)}
 .hero h1{margin-bottom:1.1rem}
+.band{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);gap:2.5rem;align-items:center}
 .heroart{position:relative;display:flex;align-items:center;justify-content:center;min-height:240px}
 .bigmound{width:min(230px,60%);aspect-ratio:1}
 .bigmound svg{width:100%;height:100%;color:var(--berry)}
@@ -103,6 +104,7 @@ ul.fh li{display:flex;justify-content:space-between;gap:1rem;font-size:.94rem;co
 .footline a{color:#6a5563}
 @media (max-width:880px){
 section.hero{grid-template-columns:1fr;padding:2rem 1.5rem}
+.band{grid-template-columns:1fr;gap:1.2rem}
 .heroart{min-height:170px;order:-1}
 .bigmound{width:150px}
 .steps{grid-template-columns:1fr}

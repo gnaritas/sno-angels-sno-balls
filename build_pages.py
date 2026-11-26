@@ -208,9 +208,12 @@ HOME = (
     '<div class="story"><p>Sno Angels is a family-owned, veteran-owned shop. David Marquez served in the Air Force and then spent his later career as a federal firefighter working with NASA, before retiring and building this corner shop with his family.</p>'
     '<p>The old insurance-office building on Main and Magnolia came back to life as part of the city’s Old Town facade program — blanketed in pink, white and green paint, with handmade artwork and new signage. It is the family’s second Tomball business; the Agape Salon is theirs too.</p>'
     '<blockquote class="verse">“Taste and see.” <cite>— Psalm 34:8, the line the family opens their own page with</cite></blockquote></div></section>'
-    '<section class="sec alt"><p class="lab">Booking events now</p><h2>Bring Sno Angels to your celebration</h2>'
+    '<section class="sec alt"><div class="band"><div>'
+    '<p class="lab">Booking events now</p><h2>Bring Sno Angels to your celebration</h2>'
     '<p class="wide">The shop is taking event bookings. Ask at the counter, call ' + TEL_DISPLAY + ', or send a note through the <a href="/contact">contact page</a> — flavors, headcounts and timing all get worked out from there.</p>'
-    '<p class="cta"><a class="btn" href="/event-bookings">Event details</a></p></section>'
+    '<p class="cta"><a class="btn" href="/event-bookings">Event details</a></p></div>'
+    '<div class="heroart" aria-hidden="true"><div class="bigmound">' + MOUND_SVG + '</div>'
+    '<span class="float f1">' + FLAKE_SVG + '</span><span class="float f2">' + FLAKE_SVG + '</span><span class="float f3">' + FLAKE_SVG + '</span></div></div></section>'
     '<section class="sec"><p class="lab">Stop by</p><h2>Corner of Main &amp; Magnolia</h2>'
     '<div class="visit"><div class="visitinfo">' + hours_table() +
     '<p class="note">Drive-thru window out front · parking behind the building · seats inside and on the street corner.</p></div>'
@@ -336,6 +339,7 @@ section.hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr)
 background:linear-gradient(180deg,#fff 0%,var(--snow) 100%);border:1px solid var(--mist);border-radius:26px;
 padding:2.6rem 2.4rem;margin:1rem 0 2.4rem;box-shadow:0 24px 60px rgba(59,34,48,.10)}
 .hero h1{margin-bottom:1.1rem}
+.band{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);gap:2.5rem;align-items:center}
 .heroart{position:relative;display:flex;align-items:center;justify-content:center;min-height:240px}
 .bigmound{width:min(230px,60%);aspect-ratio:1}
 .bigmound svg{width:100%;height:100%;color:var(--berry)}
@@ -405,6 +409,7 @@ ul.fh li{display:flex;justify-content:space-between;gap:1rem;font-size:.94rem;co
 .footline a{color:#6a5563}
 @media (max-width:880px){
 section.hero{grid-template-columns:1fr;padding:2rem 1.5rem}
+.band{grid-template-columns:1fr;gap:1.2rem}
 .heroart{min-height:170px;order:-1}
 .bigmound{width:150px}
 .steps{grid-template-columns:1fr}
