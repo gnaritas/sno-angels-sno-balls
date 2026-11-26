@@ -255,10 +255,11 @@ EVENTS = (
     '<section class="sec"><p class="lab">How a booking starts</p><h2>Tell us what you’re celebrating</h2>'
     '<p class="wide">Ask at the counter, call ' + TEL_DISPLAY + ', or send the note through the <a href="/contact">contact page</a>. Headcount, flavors and timing get figured out with the family one conversation at a time — nothing here is a package you have to guess your way through.</p>'
     '<ul class="chips"><li>Up to 3 flavors per mound</li><li>More than 50 flavor options</li><li>Kosher · dye-free · sugar-free choices</li><li>Ice-cream stuff-ins &amp; sweet cream floats</li></ul></section>'
-    '<section class="sec alt"><p class="lab">While you plan</p><h2>Come try the product</h2>'
-    '<p class="wide">The corner of Main and Magnolia is open all week (except Sunday) — grab a mound at the drive-thru or park in back, and talk booking with the family on the same trip.</p>'
-    + hours_table() +
-    '<p class="cta"><a class="btn" href="/contact">Send a booking note</a><a class="btn alt" href="' + TEL_HREF + '">Call ' + TEL_DISPLAY + '</a></p></section>'
+    '<section class="sec alt"><div class="gband"><div>'
+    '<p class="lab">While you plan</p><h2>Come try the product</h2>'
+    '<p class="wide">The corner of Main and Magnolia is open all week (except Sunday) — grab a mound at the drive-thru or park in back, and talk booking with the family on the same trip.</p></div>'
+    '<div>' + hours_table() +
+    '<p class="cta"><a class="btn" href="/contact">Send a booking note</a><a class="btn alt" href="' + TEL_HREF + '">Call ' + TEL_DISPLAY + '</a></p></div></div></section>'
 )
 
 CONTACT = (
