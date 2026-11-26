@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://sno-angels-sno-balls-demo.up.railway.app/sitemap.xml

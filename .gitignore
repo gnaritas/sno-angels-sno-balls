@@ -1,0 +1,4 @@
+shots/
+node_modules/
+.railwayignore
+send-envelope.json
